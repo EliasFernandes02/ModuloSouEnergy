@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd" >
+    <router id="standard">
+        <route frontName="digitalc" id="digitalc">
+        <module name="DigitalCollege_Dev"/>
+        </route>
+    </router>
+     <router id="standard">
+        <route frontName="produtos" id="produtos">
+        <module name="DigitalCollege_Dev"/>
+        </route>
+    </router>
+</config>

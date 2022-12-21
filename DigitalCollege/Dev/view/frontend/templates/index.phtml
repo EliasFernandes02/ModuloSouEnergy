@@ -1,0 +1,27 @@
+<h1>Produtos Disponiveis</h1>
+<table>
+    <theader>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>SKU</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+        </tr>
+    </theader>
+    <tbody>
+        <?php 
+        $productCollection = $block->getProductCollection();
+        foreach ($productCollection as $product) {
+             echo"
+             <tr>
+                <td>{$product['entity_id']}</td>
+                <td>{$product['name']}</td>
+                <td>{$product['sku']}</td>
+                <td>{$product['price']}</td>
+                <td>{$product['meta_description']}</td>
+            </tr>";
+        }
+        ?>
+    </tbody>
+</table>
